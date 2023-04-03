@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="expense.css">
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="form-div">
+            <strong class="sign">Add Expense</strong><button id="total"></button>
+            <br><div id="error1"><br><div id="error"></div>
+        <form action="" method="POST" class="form-control">
+            <label for="amount">Enter Amount:-</label>
+                <input type="number" id="amount" class="enter" required></span><br>
+            <label for="email">Your comment:-</label>
+                <input type="text" id="comment" class="enter" required><br>
+            <label for="expense">Chose Catagpry-</label>
+            <select name="enter" id="catagory">
+            <option value="food">Food</option>
+            <option value="Movi">Movies</option>
+            <option value="helth">Helth</option>
+            <option value="Upskill">UpSkill</option>
+            <option value="Electronic">Electronic</option>
+            <option value="Party">Party</option>
+        </select>
+            <button class="btn" id="addExpense">Add Expense</button>
+        </div>
+            </form><br>
+            <button class="btn" id="premiumLink" >Become a Premium</button>
+            <span id="leaderboard"></span>
+            <span id="downloadexpense"></span> <br>
+            <label for="per-page">per page</label>
+            <select name="" id="per-page" class="per-page">
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="40">40</option>
+            </select>
+
+            <span id="previousPage"></span>
+            <button id="currentPage"></button>
+            <span id="nextPage"></span>
+            <span id="lastpage"></span>
+            <br>
+            <div id="addItem"></div>
+            <div id="showleaderboard"></div>
+           
+         </div> 
+    </main>
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="expense.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="premium.js"></script>
+  
+
+</body>
+
+</html>

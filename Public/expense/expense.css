@@ -1,0 +1,196 @@
+body{
+    background-color: rgba(215, 206, 224, 0.466);
+}
+.hide{
+    display: none;
+}
+.form-div{
+    background-color: rgba(119, 186, 119, 0.776);
+    color: rgb(15, 14, 14);
+    width: 450px;
+   padding-bottom: 150px;
+    padding-top: 10px;
+    padding-left: 2rem;
+    text-align: left;
+    border-radius: 30px;
+    position: absolute;
+    right: 30%;
+    left: 5%;
+    box-shadow: rgb(14, 218, 218);
+   
+}
+.enter{
+    border-radius: 15px;
+     width: 50%;
+     margin: .4rem;
+     border-style: none;
+ }
+ #total{
+    position: absolute;
+    right: 5%;
+    width: 200px;
+    border-style: none;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: left;
+    background-color: aqua;
+    height: 30px;
+}
+
+.per-page{
+    position: absolute;
+    /* right: 2%; */
+    border-color: #09d9f5;
+    font-weight: 700;
+}
+#previousPage,#currentPage,#nextPage,#lastpage{
+    position: relative;
+    left: 50%;
+    text-align: center;
+    
+    font-weight: 700;
+}
+
+#currentPage{
+height: 30px;
+background-color: wheat;
+}
+
+#page-number{
+    width: 60%;
+    height: 30px;
+    padding: 3px;
+}
+.edit{
+    position:absolute;
+    right: 10%;
+    width: 10px;
+}
+
+
+#leader{
+background-color: rgb(196, 150, 150);
+}
+.btn{
+    width: 140px;
+    font-weight: 600;
+    margin-left: 3rem;
+    height: 23px;
+    background-color: rgba(27, 27, 211, 0.982);
+    color: wheat;
+    border-radius: 20px;
+    cursor: pointer;
+    border-style: none;
+}
+.btn-pay{
+    width: 49%;
+    font-weight: 600;
+    height: 30px;
+    background-color: rgba(27, 27, 211, 0.982);
+    color: wheat;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.edit{
+    position:absolute;
+    right: 3%;
+    width: 40px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: rgb(7, 237, 23)
+    
+}
+.delete{
+    position:absolute;
+    right: 15%;
+    width: 60px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: rgba(237, 7, 7, 0.785);
+   
+    
+}
+
+.download{
+    background-color: antiquewhite;
+}
+.st {
+    text-align: center;
+    background-color: #75dd70;
+    font-size: x-large;
+    
+}
+.total-col{
+    text-align: right;
+    background-color: rgba(68, 101, 130, 0.632);
+    font-size: larger;
+}
+.delete:hover,.edit:hover{
+    background-color: rgba(218, 224, 22, 0.847);
+    color: rgb(26, 2, 2);
+}
+.btn:hover,.btn-pay:hover{
+    background-color: rgb(4, 114, 59);
+}
+#error{
+    background-color: red;
+    color: white;
+}
+.error{
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+.sign{
+    font-size: x-large;
+    font-weight: 900;
+}
+.a:hover{
+    font-size: large;
+    font-weight: 700;
+    color: rgb(8, 24, 247);
+}
+.a{
+   
+    padding: 10px;
+    border-style: none;
+}
+
+.list{
+    list-style-type: none;
+    /* margin: 0.7rem; */
+    border-color: rgba(119, 186, 119, 0.776);
+    border-style: none;
+   
+    padding-left: 10px;
+    text-align: left;
+    font-size: large;
+    font-weight: 500;
+}
+#showleaderboard{
+    list-style-type: none;
+    font-size: large;
+    text-align: center;
+    font-style: none;
+    background-color: rgba(162, 241, 15, 0.185);
+    color: rgb(10, 0, 0);
+    font-weight: 500;
+}
+#erroramount{
+    color: red;
+}
+
+#catagory{
+    border-radius: 8px;
+}
+.totalamount{
+    position: absolute;
+    right: 1%;
+    top: 0%;
+    height: 25px;
+    width: 85px;
+    background-color: aqua;
+    font-weight: 900;
+    border-style: none;
+}
+
