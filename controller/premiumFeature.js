@@ -2,6 +2,7 @@ const User=require('../models/user');
 const Download=require('../models/download')
 const {S3BucketUpload}=require('../service/s3bucket')
 const {error,premium}=require('../service/repete')
+
 exports.leaderboardOfAll=async(req,res)=>{
     try{
         await premium(req.user.isPremium)

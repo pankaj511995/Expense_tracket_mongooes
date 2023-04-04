@@ -2,6 +2,7 @@ const User=require('../models/user')
 const forgotPassword=require('../models/forgotPassword')
 const {sendEmail}=require('../service/email')
 const {error,bcryptpassword}=require('../service/repete')
+
 exports.forgotPasswordLink=async(req,res)=>{
     try{
          
@@ -11,7 +12,8 @@ exports.forgotPasswordLink=async(req,res)=>{
            const forgot= await forgotPassword.create ({isActive:true,userId:user._id})
            const p1=sendEmail(req.body.email,forgot._id.toString())
            const p2= User.findOneAndUpdate(user._id,{$push:{forgots:forgot._id}},{new:true,useFindAndModify:false})
-            await Promise.all([p1,p2])//if may be email fail to send then rollback 
+
+            await Promise.all([p1,p2])
         res.status(200).json({message:'sent email'})
     }else throw new Error() 
 }catch(err){
