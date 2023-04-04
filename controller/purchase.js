@@ -20,7 +20,7 @@ exports.updateOrderId=async (req,res)=>{
         await Order.updateOne({orderId:razorpay_order_id},{paymentId:razorpay_payment_id,status:true})
         req.user.isPremium=true
 
-        req.user.orders=[]
+        
         await req.user.save()
         res.status(200).json({token:generateToken(req.user.id,req.user.name,true)})
     }catch(err){
